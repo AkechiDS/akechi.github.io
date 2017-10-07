@@ -1,0 +1,33 @@
+if (document.addEventListener) {
+    document.addEventListener("DOMContentLoaded", function() {
+        loaded();
+    });
+} else if (document.attachEvent) {
+    document.attachEvent("onreadystatechange", function() {
+        loaded();
+    });
+}
+
+function loaded() {
+
+    setInterval(loop, 400);
+
+}
+
+var x = 0;
+
+var titleText = [ "⠀", "a", "ak", "ake", "akec", "akech", "akechi", "akech", "akec", "ake", "ak", "a", " "];
+
+function loop() {
+
+    document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
+
+}
+
+
+<table width="17%" height="206" border="1" cellpadding="3" cellspacing="3">
+<br>  <tr>
+<br>    <td><img src="/images/Ava0002.gif" hspace="70" vspace="50" align="bottom"></td>
+<br>  </tr>
+<br></table>
+<img src="C:\Users\EnvyDS\Desktop\akechi.ml\images\tyan.png" width="100" height="100" 
